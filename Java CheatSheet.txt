@@ -1,0 +1,23 @@
+Useful Java Imports:
+
+Scanner - import.util.Scanner;
+List - import.util.List;
+Array List - java.util.ArrayList;
+
+File - Java.io.File;
+File Exception - FileNotFoundException;
+Print Writer - Java.io.PrintWriter;
+
+Syntax:
+If Statement - 
+if (*condition*){
+    *code goes here*
+
+} else if (*condition*){
+    *code goes here*
+} else {
+    *code goes here*
+}
+
+
+
