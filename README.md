@@ -1,2 +1,2 @@
 # Java_Cheatsheet
-A list of common syntax and imports I find myself using for programming classes and personal projects. Mostly covers the very basic concepts, and will be updated as I go
+A list of common syntax and imports I find myself using for programming classes and personal projects. Mostly covers the very basic concepts, and will slowly be updated over time. For clarification, this sheet is only intended to be used as a REFERENCE for personal projects and activities that permit the uses of notes and references, please avoid using this sheet for help on Tests and Quizzes that don't allow the use of outside notes or references.
