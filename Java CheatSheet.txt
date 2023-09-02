@@ -11,13 +11,30 @@ Print Writer - Java.io.PrintWriter;
 Syntax:
 If Statement - 
 if (*condition*){
-    *code goes here*
+    *code goes here*;
 
 } else if (*condition*){
-    *code goes here*
+    *code goes here*;
 } else {
-    *code goes here*
+    *code goes here*;
 }
+
+For Loop:
+for ( *counter object*; *counter condition*; *counter increase/decrease*){
+   *code goes here*;
+}
+
+While Loop:
+while (*condition*){
+   *code goes here*;
+   *condition increase/decrease*;
+}
+
+Do While Loop
+do {
+   *code goes here*
+   *condition increase/decrease*
+} while (*condition*);
 
 
 
