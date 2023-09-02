@@ -26,7 +26,9 @@ Declaring Variables (2 ways):
 Scanners:
 New Scanner) Scanner *Scanner obj Name* = New Scanner(System.in);
 
-
+Assign a value to a variable) System.out.print("Enter a number: ");
+                              *variable Name* = *Scanner obj name*.nextDouble();
+                              (.nextDouble();, .nextInt();, .next();)
 If Statement:
 if (*condition*){
     *code goes here*;
