@@ -8,8 +8,26 @@ File - Java.io.File;
 File Exception - FileNotFoundException;
 Print Writer - Java.io.PrintWriter;
 
+Variable Types:
+String - Text, words, sentences, surround with double quotes ("Hello")
+Float - "Floating point numbers", Decimals (1.5, -1.5)
+Int - Integers, whole nubers (123, -123)
+Char - Single characters/letters, surround with single quotes ('a')
+boolean - values that are either True or False
+
 Syntax:
-If Statement - 
+
+Declaring Variables (2 ways):
+1) *Variable Type* *variable Name*; 
+   *Variable Name* = *Data*;
+
+2) *Variable Type* *Variable Name* = *Data*;
+
+Scanners:
+New Scanner) Scanner *Scanner obj Name* = New Scanner(System.in);
+
+
+If Statement:
 if (*condition*){
     *code goes here*;
 
