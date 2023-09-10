@@ -72,3 +72,21 @@ Adding elements) *Array list name*.add(*obj name*);
 
 Accessing specific items) *array list name*.get(*index of obj*);
 
+Changing specific items) *array list name*.set(*index of obj*, *new data*);
+
+Removing specific items) *array list name*.remove(*index*);
+
+Clearing an Array List) *array list name*.clear();
+
+Array list size) *array list name*.size();
+
+Looping Through an array list)
+for (int i = 0; i < *array list name*.size(); i++) {
+  System.out.println(*array list name*.get(i));
+}
+
+Random Number Generator:
+new random obj) Random *obj name* = new Random();
+
+Files)
+Create file obj) 
