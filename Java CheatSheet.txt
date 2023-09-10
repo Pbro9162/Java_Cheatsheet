@@ -1,13 +1,3 @@
-Useful Java Imports:
-
-Scanner - import.util.Scanner;
-List - import.util.List;
-Array List - java.util.ArrayList;
-
-File - Java.io.File;
-File Exception - FileNotFoundException;
-Print Writer - Java.io.PrintWriter;
-
 Variable Types:
 String - Text, words, sentences, surround with double quotes ("Hello")
 Float - "Floating point numbers", Decimals (1.5, -1.5)
@@ -23,12 +13,14 @@ Declaring Variables (2 ways):
 
 2) *Variable Type* *Variable Name* = *Data*;
 
-Scanners:
-New Scanner) Scanner *Scanner obj Name* = New Scanner(System.in);
+Switch Statement:
+switch (*int, char, or string variable*) {
+  case *int char or string*:
+      *code goes here*
+  case *int char or string*
+      *code goes here*
+}
 
-Assign a value to a variable) System.out.print("Enter a number: ");
-                              *variable Name* = *Scanner obj name*.nextDouble();
-                              (.nextDouble();, .nextInt();, .next();, .nextFloat();, .nextBoolean();)
 If Statement:
 if (*condition*){
     *code goes here*;
@@ -56,5 +48,27 @@ do {
    *condition increase/decrease*
 } while (*condition*);
 
+Useful Java Imports:
 
+Scanner - import.util.Scanner;
+Array List - java.util.ArrayList;
+Random Number Generator - java.util.Random;
+
+File - Java.io.File;
+File Exception - FileNotFoundException;
+Print Writer - Java.io.PrintWriter;
+
+Scanners:
+New Scanner) Scanner *Scanner obj Name* = New Scanner(System.in);
+
+Assign a value to a variable) System.out.print("Enter a number: ");
+                              *variable Name* = *Scanner obj name*.nextDouble();
+                              (.nextDouble();, .nextInt();, .next();, .nextFloat();, .nextBoolean();)
+
+Array Lists:
+new Array List) ArrayList<*data type*> *array list name* = new ArrayList<*data type*>();
+
+Adding elements) *Array list name*.add(*obj name*);
+
+Accessing specific items) *array list name*.get(*index of obj*);
 
