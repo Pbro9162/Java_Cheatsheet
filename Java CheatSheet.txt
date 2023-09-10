@@ -56,6 +56,7 @@ Random Number Generator - java.util.Random;
 
 File - Java.io.File;
 File Exception - FileNotFoundException;
+import java.io.IOException;
 Print Writer - Java.io.PrintWriter;
 
 Scanners:
@@ -88,5 +89,17 @@ for (int i = 0; i < *array list name*.size(); i++) {
 Random Number Generator:
 new random obj) Random *obj name* = new Random();
 
-Files)
-Create file obj) 
+Files:
+Create file obj) File *obj name* = new File(*file name or directory*);
+
+File methods)
+canRead() - Boolean - tests if file is readable or not
+canWrite() - Boolean - tests if file is writable or not
+createNewFile() - creates empty file
+delete() - Deletes a file
+exists - Boolean - tests whether a file exists
+getName() - String - Returns the name of a file
+getAbsolutePath() - String - Returns the absolute path name of a file
+length() - Returns size of the file in Bytes
+list() - String[] - Returns an array of the files in a Directory
+mkdir - Boolean - Creates a Directory
