@@ -1,19 +1,24 @@
-Variable Types:
+~~~~~~~~~~~~~~~~~~~~⋆ ˚｡⋆୨୧˚*** BASICS ***⋆ ˚｡⋆୨୧˚~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Variable Types://
+
 String - Text, words, sentences, surround with double quotes ("Hello")
 Float - "Floating point numbers", Decimals (1.5, -1.5)
 Int - Integers, whole nubers (123, -123)
 Char - Single characters/letters, surround with single quotes ('a')
 boolean - values that are either True or False
 
-Syntax:
-
+//Syntax://
 Declaring Variables (2 ways):
+
 1) *Variable Type* *variable Name*; 
    *Variable Name* = *Data*;
 
 2) *Variable Type* *Variable Name* = *Data*;
 
-Switch Statement:
+
+//Switch Statement://
+
 switch (*int, char, or string variable*) {
   case *int char or string*:
       *code goes here*
@@ -21,7 +26,8 @@ switch (*int, char, or string variable*) {
       *code goes here*
 }
 
-If Statement:
+//If Statement://
+
 if (*condition*){
     *code goes here*;
 
@@ -31,40 +37,132 @@ if (*condition*){
     *code goes here*;
 }
 
-For Loop:
+
+//For Loop://
+
 for ( *counter object*; *counter condition*; *counter increase/decrease*){
    *code goes here*;
 }
 
-While Loop:
+
+//While Loop://
+
 while (*condition*){
    *code goes here*;
    *condition increase/decrease*;
 }
 
-Do While Loop
+
+//Do While Loop//
+
 do {
    *code goes here*
    *condition increase/decrease*
 } while (*condition*);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~₊✩‧₊˚౨ৎ˚₊✩‧₊ ***LISTS*** ₊✩‧₊˚౨ৎ˚₊✩‧₊~~~~~~~~~~~~~~~~~~~~~~~~
+~~Arrays~~
 
-Useful Java Imports:
+//Creating a new Array://
+*data type*[] *array name* = {*data goes here*};
+
+
+//To cycle through an array, use a for loop. Ex://
+
+int[] array = {1, 2, 3, 4};
+i = 0;                           <-- counter variable
+
+for (; i <= array.length-1; i++){
+System.out.print(array[i]);      <-- this loop will cycle through the array index and print each element
+}
+
+
+~~2D Arrays~~
+
+//Creating a new 2D Array://
+*data type*[][] *array name* = {{*first set of data*},{*second set of data*}};
+
+//Accessing elements://
+array[*index of array*][*index of element in array*] <-- multi-dimensional arrays have more than 1 regular array stored in them,
+                                                         so you have to specify which array you're accessing (via the same index-
+                                                         ing rules) before specifying the elements location in it.
+
+//Changing values://
+array[*index of array*][*index of element in array] = *new value*; <-- replaces pre-existing value with new one
+
+
+//To cycle through a 2D array, use nested for loops://
+
+int[][] array = {{1, 2, 3, 4}, {5, 6, 7, 8}};
+int i = 0; <-- array counter
+int j = 0; <-- element counter
+
+for(; i <= array.length-1; i++){
+  for(; j <= array[i].length-1; j++){ 
+    System.out.print(array[i][j]);
+  }
+}
+
+
+//Useful Class for array methods://
+Java.Util.Arrays;
+Java.Util.Array.*Specific method you want from class*;
+
+
+~~ArrayLists~~
+**Requires the ArrayList class:
+import Java.Util.ArrayList;
+
+
+//Creating an ArrayList://
+ArrayList<*data type*> *list name* = new ArrayList<*data type*>();
+
+//Adding Items//
+*list name*.add(*value*);
+
+//Accessing items//
+*list name*.get(*item index*);
+
+//modifying existing elements//
+*list name*.set(*item index*, *new value*);
+
+//removing an item//
+*list name*.remove(*item index*);
+
+//Clearing a list//
+*list name*.clear();
+
+//size method//
+*list name*.size();
+
+//Cycling through a list//
+the same as a for loop but instead of array.length, use *list*.size(), and instead of array[], use *list*.get(i);
+
+for (; i <= list.size()-1; i++){
+System.out.print(list.get(i));      <-- this loop will cycle through the array index and print each element
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Common Useful Java Imports and Classes:
 
 Scanner - import.util.Scanner;
 Array List - java.util.ArrayList;
 Random Number Generator - java.util.Random;
+Array methods - java.util.Array
 
 File - Java.io.File;
 File Exception - FileNotFoundException;
-import java.io.IOException;
+                 import java.io.IOException;
 Print Writer - Java.io.PrintWriter;
 
 Scanners:
+
 New Scanner) Scanner *Scanner obj Name* = New Scanner(System.in);
 
-Assign a value to a variable) System.out.print("Enter a number: ");
+Assign user input to a variable) System.out.print("Enter a number: ");
                               *variable Name* = *Scanner obj name*.nextDouble();
                               (.nextDouble();, .nextInt();, .next();, .nextFloat();, .nextBoolean();)
+
 
 Array Lists:
 new Array List) ArrayList<*data type*> *array list name* = new ArrayList<*data type*>();
